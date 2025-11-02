@@ -13,6 +13,20 @@
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "seedrandom": "^3.0.5",
-    "vue": "^3.5.22"
+    "vue": "^3.5.22",
+    "@iconify-json/bi": "^1.2.6",
+    "@iconify-json/carbon": "^1.2.14",
+    "@iconify-json/devicon": "^1.2.45",
+    "@iconify-json/fluent": "^1.2.34",
+    "@iconify-json/icon-park-outline": "^1.2.4",
+    "@iconify-json/logos": "^1.2.10",
+    "@iconify-json/ph": "^1.2.2",
+    "@iconify-json/ri": "^1.2.6",
+    "@iconify-json/simple-icons": "^1.2.56",
+    "@iconify-json/svg-spinners": "^1.2.4",
+    "@iconify-json/twemoji": "^1.2.4",
+    "@iconify/utils": "^2.3.0",
+    "@proj-airi/lobe-icons": "^1.0.13",
+    "playwright-chromium": "^1.56.1"
   }
 }

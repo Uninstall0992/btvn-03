@@ -3,11 +3,11 @@
 theme: apple-basic
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Finterlink-static0.tsbohemia.cz%2Fwacom-cintiq-27qhd-touch-image3-big_ies2152048.jpg&f=1&nofb=1&ipt=23f71266e63d3c0766c635e54b78011118da895ab3b93be70545b9f39b0323b9
+image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Finterlink-static0.tsbohemia.cz%2Fwacom-cintiq-27qhd-touch-image3-big_ies2152048.jpg&f=1&nofb=1&ipt=23f71266e63d3c0766c635e54b78011118da895ab3b93be70545b9f39b0323b9
 # some information about your slides (markdown enabled)
-title: Bản vẽ - bút vẽ
+title: Bảng vẽ - bút vẽ
 # apply UnoCSS classes to the current slide
-class: text-center
+layout: intro-image
 # https://sli.dev/features/drawing
 drawings:
   persist: false
@@ -19,14 +19,20 @@ mdc: true
 preload: true
 ---
 
-# Bản vẽ - bút vẽ
-
-Công cụ tối thượng của những họa sĩ kĩ thuật số.
-
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Nhấn Space để di chuyển đến trang tiếp theo. <carbon:arrow-right />
+<div class="absolute top-10">
+  <span class="font-700">
+    25127542 - Đàm Anh Tuấn
+  </span>
 </div>
 
+<div class="absolute bottom-10">
+  <h1>Bảng vẽ - bút vẽ</h1>
+  <p>Công cụ đắc lực của họa sĩ kĩ thuật số</p>
+  <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
+  Nhấn Space để di chuyển đến trang tiếp theo. <carbon:arrow-right />
+  </div>
+
+</div>
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
@@ -68,7 +74,7 @@ layout: fact
 Bảng vẽ kỹ thuật số là một thiết bị đầu vào cho phép người dùng vẽ tay, hình ảnh động và đồ họa, với một thiết bị vẽ giống như bút gọi là bút vẽ, tương tự như cách một người vẽ hình ảnh bằng bút chì và giấy. [Nguồn](https://www.webopedia.com/definitions/digitizing-tablet/)
 
 ---
-image: 
+image:
 ---
 
 # Đặc điểm
@@ -170,9 +176,9 @@ image:
 
 ---
 layout: 3-images
-imageLeft: 'https://www.zdnet.com/a/img/resize/a0b30b508195956bd9fcd92d5ff1572eaeb78cd4/2023/02/16/35775989-197a-43ce-8c97-13936dde5f4f/pxl-20230216-173948408.jpg?auto=webp&fit=crop&height=900&width=1200'
-imageTopRight: 'https://astropad.com/wp-content/uploads/2024/01/Wacom-Cintiq-16-.webp'
-imageBottomRight: 'https://store-img.huion.com.cn/3/a6c/standalone-tablet-mobile.webp'
+imageLeft: "https://www.zdnet.com/a/img/resize/a0b30b508195956bd9fcd92d5ff1572eaeb78cd4/2023/02/16/35775989-197a-43ce-8c97-13936dde5f4f/pxl-20230216-173948408.jpg?auto=webp&fit=crop&height=900&width=1200"
+imageTopRight: "https://astropad.com/wp-content/uploads/2024/01/Wacom-Cintiq-16-.webp"
+imageBottomRight: "https://store-img.huion.com.cn/3/a6c/standalone-tablet-mobile.webp"
 ---
 
 ---
@@ -188,29 +194,29 @@ imageBottomRight: 'https://store-img.huion.com.cn/3/a6c/standalone-tablet-mobile
     rounded-lg overflow-hidden
   >
     <div bg="red-800/40" px-4 py-2 flex items-center>
-      <div i-carbon:warning-alt text-red-300 text-xl mr-2 />
+      <div i-carbon:touch-1 text-red-300 text-xl mr-2 />
       <span font-bold>Điện dung</span>
     </div>
     <div px-4 py-3 flex flex-col gap-2>
       <div flex items-center gap-2 py-1>
-        <div i-carbon:development text-amber-300 text-xl />
+        <div i-carbon:fingerprint-recognition text-amber-300 text-xl />
         <div>
-          <div font-bold>Development</div>
-          <div text-sm opacity-80>Preparing new model training datasets</div>
+          <div font-bold>Nhái cú chạm con người</div>
+          <div text-sm opacity-80>Dựa trên khả năng dẫn điện của ngón tay</div>
         </div>
       </div>
       <div flex items-center gap-2 py-1>
         <div i-carbon:machine-learning-model text-amber-300 text-xl />
         <div>
-          <div font-bold>Nhận dạng</div>
-          <div text-sm opacity-80>Fine-tuning load with transformers lib</div>
+          <div font-bold>Tương thích cao</div>
+          <div text-sm opacity-80>Phù hợp với nhiều thiết bị cảm ứng mới sử dụng công nghệ điện dung</div>
         </div>
       </div>
       <div flex items-center gap-2 py-1>
-        <div i-carbon:user-certification text-amber-300 text-xl />
+        <div i-carbon:user text-amber-300 text-xl />
         <div>
-          <div font-bold>Chuyên dụng</div>
-          <div text-sm opacity-80>Chỉ hoạt động với thiết bị được hỗ trợ</div>
+          <div font-bold>Dễ phối hợp</div>
+          <div text-sm opacity-80>Thiết bị điện dung phân biệt được bàn tay và bút cảm ứng</div>
         </div>
       </div>
     </div>
@@ -222,211 +228,290 @@ imageBottomRight: 'https://store-img.huion.com.cn/3/a6c/standalone-tablet-mobile
     rounded-lg overflow-hidden
   >
     <div bg="green-800/40" px-4 py-2 flex items-center>
-      <div i-carbon:cloud-service-management text-green-300 text-xl mr-2 />
+      <div i-carbon:pen text-green-300 text-xl mr-2 />
       <span font-bold>Cộng hưởng điện từ</span>
     </div>
-    <div px-4 py-3 flex flex-col gap-2 h-full>
       <div bg="green-900/30" rounded-lg p-3 flex flex-col gap-2>
-        <div font-bold text-sm>Single Environment, Multiple Contexts</div>
+        <div font-bold text-sm>Chủ động</div>
         <div flex items-center gap-2>
-          <div i-carbon:checkmark-outline text-green-400 />
-          <span text-sm>Define once, use everywhere</span>
+          <div i-carbon:battery-full text-green-400 />
+          <span text-sm>Sử dụng điện</span>
         </div>
         <div flex items-center gap-2>
           <div i-carbon:checkmark-outline text-green-400 />
-          <span text-sm>Tracked dependencies with lockfiles</span>
+          <span text-sm>Nhạy và chính xác</span>
         </div>
         <div flex items-center gap-2>
-          <div i-carbon:checkmark-outline text-green-400 />
-          <span text-sm>Automatic dependency resolution</span>
+          <div i-carbon:hourglass text-green-400 />
+          <span text-sm>Độ bền có hạn</span>
         </div>
-      </div>
+        <div font-bold text-sm>Bị động</div>
+        <div flex items-center gap-2>
+          <div i-carbon:battery-charging text-green-400 />
+          <span text-sm>Lấy năng lượng trực tiếp từ sóng điện từ của thiết bị vẽ</span>
+        </div>
+              <div bg="green-900/30" rounded-lg p-3 mt-1>
+                <div font-bold text-sm mb-2>Thiết bị vẽ chuyên nghiệp thường hỗ trợ bút cộng hưởng điện từ</div>
+        </div>
+        </div>
     </div>
+
+</div>
+
+---
+
+
+## Nguyên lý hoạt động
+
+<div mt-6 />
+
+<div grid grid-cols-2 gap-6>
+  <div
+    v-click="1"
+    border="2 solid lime-800" bg="lime-800/20"
+    rounded-lg overflow-hidden
+    transition duration-500 ease-in-out
+    :class="$clicks < 1 ? 'opacity-0 translate-y-20' : 'opacity-100 translate-y-0'"
+  >
+    <div bg="lime-800/40" px-4 py-4 flex items-center>
+      <div> Cộng hưởng điện từ </div>
+    </div>
+```mermaid 
+sequenceDiagram
+    participant Bút
+    participant Thiết bị
+    Thiết bị ->> Bút: Trường điện từ biến thiên
+    note over Bút,Thiết bị: Bút cảm ứng nhận được và phản hồi
+    Bút->>Thiết bị: Sóng điện từ không liên tục
+    note over Bút,Thiết bị: Thiết bị xác định được vị trí của bút
+```
+  </div>
+
+  <div
+    v-click="2"
+    border="2 solid green-800" bg="green-800/20"
+    rounded-lg overflow-hidden
+    transition duration-500 ease-in-out
+    :class="$clicks < 2 ? 'opacity-0 translate-y-20' : 'opacity-100 translate-y-0'"
+  >
+    <div bg="green-800/40" px-4 py-3 flex items-center>
+      Điện dung
+    </div>
+```mermaid 
+flowchart TD
+    A[\Bút/]---|Thay đổi điện dung|B[\Màn hình/]
+    B[\Màn hình/] ---|Báo cáo|C[\Thiết bị/]
+```
   </div>
 </div>
 
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
 
 ---
 class: px-20
 ---
 
-# Themes
+# Hiệu năng
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+<span>Khi mua bảng vẽ thì cần phải chú ý đến những thông số sau đây</span>
 
-<div grid="~ cols-2 gap-2" m="t-2">
+<div mt-4 />
 
-```yaml
----
-theme: default
----
-```
+<div flex items-center gap-4>
 
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
+<v-clicks>
+  <div
+    :class="$clicks < 1 ? 'translate-x--20 opacity-0' : 'translate-x-0 opacity-100'"
+    rounded-lg
+    border="2 solid yellow-800" bg="yellow-800/20"
+    backdrop-blur
+    flex-1 h-full
+    transition duration-500 ease-in-out
+  >
+    <div px-2 py-12 flex items-center justify-center>
+      <div i-carbon:area text-yellow-300 h-20 w-20 />
+    </div>
+    <div bg="yellow-800/30" w-full px-4 py-2 h="5rem" flex items-center justify-center text-center>
+      <span>Diện tích</span>
+    </div>
+  </div>
+  <div
+    :class="$clicks < 2 ? 'translate-x--20 opacity-0' : 'translate-x-0 opacity-100'"
+    rounded-lg
+    border="2 solid lime-800" bg="lime-800/20"
+    backdrop-blur
+    flex-1 h-full
+    transition duration-500 ease-in-out
+  >
+    <div px-2 py-12 flex items-center justify-center>
+      <div i-carbon:pressure text-lime-300 h-20 w-20 />
+    </div>
+    <div bg="lime-800/30" w-full px-4 py-2 h="5rem" flex items-center justify-center text-center>
+      <span>Độ nhạy áp lực</span>
+    </div>
+  </div>
+  <div
+    :class="$clicks < 3 ? 'translate-x--20 opacity-0' : 'translate-x-0 opacity-100'"
+    rounded-lg
+    border="2 solid emerald-800" bg="emerald-800/20"
+    backdrop-blur
+    flex-1 h-full
+    transition duration-500 ease-in-out
+  >
+    <div px-2 py-12 flex items-center justify-center>
+      <div i-carbon:angle text-emerald-300 h-20 w-20 />
+    </div>
+    <div bg="emerald-800/30" w-full px-4 py-2 h="5rem" flex items-center justify-center text-center>
+      <span>Hỗ trợ nghiêng</span>
+    </div>
+  </div>
+  <div
+    :class="$clicks < 4 ? 'translate-x--20 opacity-0' : 'translate-x-0 opacity-100'"
+    rounded-lg
+    border="2 solid sky-800" bg="sky-800/20"
+    backdrop-blur
+    flex-1 h-full
+    transition duration-500 ease-in-out
+  >
+    <div px-2 py-12 flex items-center justify-center>
+      <div i-carbon:pen-fountain text-sky-300 h-20 w-20 />
+    </div>
+    <div bg="sky-800/30" w-full px-4 py-2 h="5rem" flex items-center justify-center text-center>
+      <span>Chất lượng</span>
+    </div>
+  </div>
+</v-clicks>
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
+<div v-click flex flex-col mt-4 bg="red-800/20" border="2 solid red-800/50" rounded-lg>
+  <div bg="red-800/30" px-4 py-2 text-red-200 flex items-center>
+    <div i-carbon:warning-alt mr-2 /> Ngoài ra
+  </div>
+  <div flex justify-between px-6 py-4 text-sm>
+    <div flex items-center gap-2>
+      <div i-carbon:usb text-red-300 text-xl />
+      <span>Kết nối: USB, Bluetooth, dongle</span>
+    </div>
+    <div flex items-center gap-2>
+      <div i-carbon:chart-evaluation text-red-300 text-xl />
+      <span>Hỗ trợ: Windows, MacOS, Linux, Android </span>
+    </div>
+    <div flex items-center gap-2>
+      <div i-carbon:cloud-service-management text-red-300 text-xl />
+      <span>Bảo hành: Cập nhật và bảo dưỡng</span>
+    </div>
+  </div>
+</div>
 
 ---
 
-# Clicks Animations
+# Nhà sản xuất
 
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
+<div flex justify-between items-center>
+  <span w="1/2">Optimizing the unbearable heaviness of builds</span>
+  <div i-carbon:cache text-7xl />
 </div>
 
-<br>
+<div mt-6 grid grid-cols-3 gap-4>
+  <div
+    v-click
+    border="2 solid indigo-800" bg="indigo-800/20"
+    rounded-lg overflow-hidden
+  >
+    <div bg="indigo-800/40" px-4 py-2 flex items-center justify-center>
+      <div i-carbon:archive text-indigo-300 text-xl mr-2 />
+      <span font-bold>1: Veikk</span>
+    </div>
+    <div px-3 py-3 flex flex-col gap-1>
+      <div text-sm opacity-80>Thương hiệu Trung Quốc, thành lập 2009</div>
+      <div flex items-center gap-1 text-xs>
+        <div i-carbon:checkmark-outline text-green-400 />
+        <span>Giá thành thấp</span>
+      </div>
+      <div flex items-center gap-1 text-xs>
+        <div i-carbon:misuse-outline text-red-400 />
+        <span>Ít ai biết đến</span>
+      </div>
+    </div>
+  </div>
 
-<v-click>
+  <div
+    v-click
+    border="2 solid purple-800" bg="purple-800/20"
+    rounded-lg overflow-hidden
+  >
+    <div bg="purple-800/40" px-4 py-2 flex items-center justify-center>
+      <div i-carbon:assembly-cluster text-purple-300 text-xl mr-2 />
+      <span font-bold>2: UGEE</span>
+    </div>
+    <div px-3 py-3 flex flex-col gap-1>
+      <div text-sm opacity-80>Thương hiệu Trung Quốc, thành lập năm 1998</div>
+      <div flex items-center gap-1 text-xs>
+        <div i-carbon:checkmark-outline text-green-400 />
+        <span>Giá thành thấp</span>
+      </div>
+      <div flex items-center gap-1 text-xs>
+        <div i-carbon:checkmark-outline text-green-400 />
+        <span>Có vài sản phẩm nổi bật</span>
+      </div>
+    </div>
+  </div>
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
+  <div
+    v-click
+    border="2 solid pink-800" bg="pink-800/20"
+    rounded-lg overflow-hidden
+  >
+    <div bg="pink-800/40" px-4 py-2 flex items-center justify-center>
+      <div i-carbon:data-class text-pink-300 text-xl mr-2 />
+      <span font-bold>3: XPPEN</span>
+    </div>
+    <div px-3 py-3 flex flex-col gap-1>
+      <div text-sm opacity-80>Thương hiệu Trung Quốc, thành lập Nhật Bản năm 2005</div>
+      <div flex items-center gap-1 text-xs>
+        <div i-carbon:checkmark-outline text-green-400 />
+        <span>Giá thành trung bình</span>
+      </div>
+      <div flex items-center gap-1 text-xs>
+        <div i-carbon:checkmark-outline text-green-400 />
+        <span>Sản phẩm đa dạng</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
+<div v-click mt-4 grid grid-cols-2 gap-4>
+  <div bg="red-800/20" rounded-lg overflow-hidden>
+    <div bg="red-800/40" px-4 py-2 flex items-center>
+      <div i-carbon:time text-red-300 text-xl mr-2 />
+      <span font-bold>Xencelabs</span>
+    </div>
+    <div px-4 py-3 flex flex-col gap-1>
+      <div flex items-center justify-between>
+        <div>Thương hiệu Trung Quốc cao cấp thành lập 2019</div>
+      </div>
+      <div flex items-center justify-between>
+        <div>Đầy đủ tính năng, sáng tạo</div>
+      </div>
+    </div>
+  </div>
 
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
+  <div bg="green-800/20" rounded-lg overflow-hidden>
+    <div bg="green-800/40" px-4 py-2 flex items-center>
+      <div i-logos:python text-green-300 text-xl mr-2 />
+      <span font-bold>Wacom</span>
+    </div>
+    <div px-4 py-3 flex flex-col gap-1>
+      <div flex items-center justify-between>
+        <div>Thương hiệu Nhật Bản thành lập 1983</div>
+      </div>
+      <div flex items-center justify-between>
+        <div>Tiêu chuẩn vàng của bảng thiết kế đồ họa</div>
+        <div text-green-400 font-bold flex items-center>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 ---
