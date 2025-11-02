@@ -28,8 +28,8 @@ function start() {
   autoplayProgress.value = 0
   autoplayInterval.value = setInterval(() => {
     progress++
-    autoplayProgress.value = progress / 30
-    if (progress >= 30) {
+    autoplayProgress.value = progress / 60
+    if (progress >= 60) {
       next()
       progress = 0
     }
