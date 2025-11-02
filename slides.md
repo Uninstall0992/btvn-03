@@ -166,16 +166,6 @@ image:
 
 </div>
 
-<div v-click mt-6 flex justify-center>
-  <div
-    border="2 solid white/5" bg="white/5" backdrop-blur-sm
-    rounded-lg px-6 py-3 flex items-center gap-3
-  >
-    <div i-carbon:idea text-yellow-300 text-2xl />
-    <span text-lg>Có mọi bảng vẽ kỹ thuật cho mọi kinh phí, kinh nghiệm và nhu cầu sử dụng</span>
-  </div>
-</div>
-
 ---
 layout: 3-images
 imageLeft: "https://www.zdnet.com/a/img/resize/a0b30b508195956bd9fcd92d5ff1572eaeb78cd4/2023/02/16/35775989-197a-43ce-8c97-13936dde5f4f/pxl-20230216-173948408.jpg?auto=webp&fit=crop&height=900&width=1200"
