@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: seriph
+theme: apple-basic
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Finterlink-static0.tsbohemia.cz%2Fwacom-cintiq-27qhd-touch-image3-big_ies2152048.jpg&f=1&nofb=1&ipt=23f71266e63d3c0766c635e54b78011118da895ab3b93be70545b9f39b0323b9
@@ -65,55 +65,185 @@ layout: fact
 ---
 
 # Khái niệm
-Bảng vẽ kỹ thuật số là một thiết bị đầu vào cho phép người dùng vẽ tay, hình ảnh động và đồ họa, với một thiết bị vẽ giống như bút gọi là bút vẽ, tương tự như cách một người vẽ hình ảnh bằng bút chì và giấy.
+Bảng vẽ kỹ thuật số là một thiết bị đầu vào cho phép người dùng vẽ tay, hình ảnh động và đồ họa, với một thiết bị vẽ giống như bút gọi là bút vẽ, tương tự như cách một người vẽ hình ảnh bằng bút chì và giấy. [Nguồn](https://www.webopedia.com/definitions/digitizing-tablet/)
+
+---
+image: 
+---
+
+# Đặc điểm
+
+## Bảng vẽ
+
+<span>Bảng vẽ kỹ thuật có thể là một trong ba loại sau đây, mỗi loại mang theo những đặc điểm riêng biệt cuả nó</span>
+
+<div mt-6 />
+
+<div grid grid-cols-3 gap-3 h-75>
+
+<v-clicks>
+
+<div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
+  <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
+    <div i-carbon:draw text-amber-300 text-sm mr-2 />
+    <div font-semibold>
+      Bảng vẽ đơn giản
+    </div>
+  </div>
+  <div px-4 py-3>
+    <div flex flex-col gap-3>
+      <div>
+        <div text-sm font-medium>Tấm vẽ đơn giản</div>
+        <div text-xs opacity-70>Phải kết nối vào máy tính để sử dụng với bút</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Đòi hỏi kỹ năng</div>
+        <div text-xs opacity-70>Người dùng vừa pahỉ nhìn màn hình máy tính vừa phải chuyển động tay</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Giá thành thấp</div>
+        <div text-xs opacity-70>Giao động phải chăng kể cả với bảng lớn</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Chống gù</div>
+        <div text-xs opacity-70>Người dùng không cần cúi người xuống khi dùng như các loại có màn hình </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
+  <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
+    <div i-carbon:tablet-landscape text-blue-300 text-sm mr-2 />
+    <div font-semibold>
+      Bảng vẽ màn hình
+    </div>
+  </div>
+  <div px-4 py-3>
+    <div flex flex-col gap-3>
+      <div>
+        <div text-sm font-medium>Gắn màn hình</div>
+        <div text-xs opacity-70>Người dùng vẽ trực tiếp lên bảng vẽ</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Giá thành cao</div>
+        <div text-xs opacity-70>Có thể đắt bằng các máy tính, laptop tầm trung đặc biệt là với những màn hình lớn</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
+  <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
+    <div i-carbon:screen text-green-300 text-sm mr-2 />
+    <div font-semibold>
+      Bảng vẽ máy tính
+    </div>
+  </div>
+  <div px-4 py-3>
+    <div flex flex-col gap-3>
+      <div>
+        <div text-sm font-medium>Tích hợp máy tính</div>
+        <div text-xs opacity-70>Không cần máy tính để chạy phần mềm vẽ</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Giá thành rất cao</div>
+        <div text-xs opacity-70>Có thể đắt bằng các máy tính, laptop cao cấp</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</v-clicks>
+
+</div>
+
+<div v-click mt-6 flex justify-center>
+  <div
+    border="2 solid white/5" bg="white/5" backdrop-blur-sm
+    rounded-lg px-6 py-3 flex items-center gap-3
+  >
+    <div i-carbon:idea text-yellow-300 text-2xl />
+    <span text-lg>Có mọi bảng vẽ kỹ thuật cho mọi kinh phí, kinh nghiệm và nhu cầu sử dụng</span>
+  </div>
+</div>
+
+---
+layout: 3-images
+imageLeft: 'https://www.zdnet.com/a/img/resize/a0b30b508195956bd9fcd92d5ff1572eaeb78cd4/2023/02/16/35775989-197a-43ce-8c97-13936dde5f4f/pxl-20230216-173948408.jpg?auto=webp&fit=crop&height=900&width=1200'
+imageTopRight: 'https://astropad.com/wp-content/uploads/2024/01/Wacom-Cintiq-16-.webp'
+imageBottomRight: 'https://store-img.huion.com.cn/3/a6c/standalone-tablet-mobile.webp'
+---
 
 ---
 
-# Code
+## Bút cảm ứng
 
-Use code snippets and get the highlighting directly, and even types hover!
+<span>Bút cảm ứng hoạt động theo hai nguyên lý căn bản: Điện dung và cộng hưởng điện từ. Hai nguyên lý này quyết định khả năng chuyển động của bút được nhận diện.</span>
 
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
+<div mt-6 grid grid-cols-2 gap-6>
+  <div
+    v-click
+    border="2 solid red-800" bg="red-800/20"
+    rounded-lg overflow-hidden
+  >
+    <div bg="red-800/40" px-4 py-2 flex items-center>
+      <div i-carbon:warning-alt text-red-300 text-xl mr-2 />
+      <span font-bold>Điện dung</span>
+    </div>
+    <div px-4 py-3 flex flex-col gap-2>
+      <div flex items-center gap-2 py-1>
+        <div i-carbon:development text-amber-300 text-xl />
+        <div>
+          <div font-bold>Development</div>
+          <div text-sm opacity-80>Preparing new model training datasets</div>
+        </div>
+      </div>
+      <div flex items-center gap-2 py-1>
+        <div i-carbon:machine-learning-model text-amber-300 text-xl />
+        <div>
+          <div font-bold>Nhận dạng</div>
+          <div text-sm opacity-80>Fine-tuning load with transformers lib</div>
+        </div>
+      </div>
+      <div flex items-center gap-2 py-1>
+        <div i-carbon:user-certification text-amber-300 text-xl />
+        <div>
+          <div font-bold>Chuyên dụng</div>
+          <div text-sm opacity-80>Chỉ hoạt động với thiết bị được hỗ trợ</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
+  <div
+    v-click
+    border="2 solid green-800" bg="green-800/20"
+    rounded-lg overflow-hidden
+  >
+    <div bg="green-800/40" px-4 py-2 flex items-center>
+      <div i-carbon:cloud-service-management text-green-300 text-xl mr-2 />
+      <span font-bold>Cộng hưởng điện từ</span>
+    </div>
+    <div px-4 py-3 flex flex-col gap-2 h-full>
+      <div bg="green-900/30" rounded-lg p-3 flex flex-col gap-2>
+        <div font-bold text-sm>Single Environment, Multiple Contexts</div>
+        <div flex items-center gap-2>
+          <div i-carbon:checkmark-outline text-green-400 />
+          <span text-sm>Define once, use everywhere</span>
+        </div>
+        <div flex items-center gap-2>
+          <div i-carbon:checkmark-outline text-green-400 />
+          <span text-sm>Tracked dependencies with lockfiles</span>
+        </div>
+        <div flex items-center gap-2>
+          <div i-carbon:checkmark-outline text-green-400 />
+          <span text-sm>Automatic dependency resolution</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 level: 2
