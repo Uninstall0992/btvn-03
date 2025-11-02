@@ -408,7 +408,7 @@ class: px-20
 # Nhà sản xuất
 
 <div flex justify-between items-center>
-  <span w="1/2">Optimizing the unbearable heaviness of builds</span>
+  <span w="1/2">Thương hiệu của bảng vẽ sẽ quyết định chất lượng và giá thành</span>
   <div i-carbon:cache text-7xl />
 </div>
 
@@ -419,7 +419,7 @@ class: px-20
     rounded-lg overflow-hidden
   >
     <div bg="indigo-800/40" px-4 py-2 flex items-center justify-center>
-      <div i-carbon:archive text-indigo-300 text-xl mr-2 />
+      <div  text-indigo-300 text-xl mr-2 />
       <span font-bold>1: Veikk</span>
     </div>
     <div px-3 py-3 flex flex-col gap-1>
@@ -441,7 +441,7 @@ class: px-20
     rounded-lg overflow-hidden
   >
     <div bg="purple-800/40" px-4 py-2 flex items-center justify-center>
-      <div i-carbon:assembly-cluster text-purple-300 text-xl mr-2 />
+      <div  text-purple-300 text-xl mr-2 />
       <span font-bold>2: UGEE</span>
     </div>
     <div px-3 py-3 flex flex-col gap-1>
@@ -463,7 +463,7 @@ class: px-20
     rounded-lg overflow-hidden
   >
     <div bg="pink-800/40" px-4 py-2 flex items-center justify-center>
-      <div i-carbon:data-class text-pink-300 text-xl mr-2 />
+      <div  text-pink-300 text-xl mr-2 />
       <span font-bold>3: XPPEN</span>
     </div>
     <div px-3 py-3 flex flex-col gap-1>
@@ -483,7 +483,7 @@ class: px-20
 <div v-click mt-4 grid grid-cols-2 gap-4>
   <div bg="red-800/20" rounded-lg overflow-hidden>
     <div bg="red-800/40" px-4 py-2 flex items-center>
-      <div i-carbon:time text-red-300 text-xl mr-2 />
+      <div  text-red-300 text-xl mr-2 />
       <span font-bold>Xencelabs</span>
     </div>
     <div px-4 py-3 flex flex-col gap-1>
@@ -498,7 +498,7 @@ class: px-20
 
   <div bg="green-800/20" rounded-lg overflow-hidden>
     <div bg="green-800/40" px-4 py-2 flex items-center>
-      <div i-logos:python text-green-300 text-xl mr-2 />
+      <div text-green-300 text-xl mr-2 />
       <span font-bold>Wacom</span>
     </div>
     <div px-4 py-3 flex flex-col gap-1>
@@ -506,7 +506,7 @@ class: px-20
         <div>Thương hiệu Nhật Bản thành lập 1983</div>
       </div>
       <div flex items-center justify-between>
-        <div>Tiêu chuẩn vàng của bảng thiết kế đồ họa</div>
+        <div>Tiêu chuẩn vàng về bảng thiết kế đồ họa</div>
         <div text-green-400 font-bold flex items-center>
         </div>
       </div>
@@ -514,6 +514,8 @@ class: px-20
   </div>
 </div>
 
+---
+layout: two-cols-header
 ---
 
 # Motions
