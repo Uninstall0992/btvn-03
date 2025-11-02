@@ -52,6 +52,7 @@ level: 2
 | <kbd>down</kbd>                                     | slide tiếp theo                  |
 | <kbd>enter</kbd>                                    | tự động chạy                |
 | <kbd>esc</kbd>                                      | tắt tự động chạy            |
+| <kbd>`</kbd>                                        | outline view                   |
 <!-- https://sli.dev/guide/animations.html#click-animation -->
 
 ---
@@ -61,9 +62,10 @@ layoutClass: gap-16
 
 # Mục lục
 
+
 ::right::
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+<Toc />
 
 ---
 transiton: fade
@@ -635,4 +637,37 @@ image: https://cdn.mos.cms.futurecdn.net/HfjEUJ8aXQd4KULemzhuv3-970-80.jpg.webp
 </ol>
 
 [Nguồn](https://www.creativebloq.com/features/best-drawing-tablet)
+
 ---
+
+# Đánh giá mức độ hoàn thành 
+
+| STT|7|Kỹ năng PowerPoint|
+| :------- | :------: | -------: |
+| 1|0.5| Trang bìa (Tên nội dung, thông tin cá nhân)
+| 2|0.5| Outline
+| 3|0.5| Bullet & Numberring
+| 4|0.5| Column                       
+| 5|0.5| Insert picture/shape                       
+| 6|0.5| Word Art/ Smart Art                      
+
+---
+
+
+| 7|0.5|Action button|
+| :------- | :------: | -------: |
+| 8|0.5| Footer (mssv- họ tên, Page number, date)
+| 9|0.5| Table
+| 10|0.5| Animation
+| 11|0.5| Transition                       
+| 12|0.5| Diễn họa tự động                       
+| 13|0.5| Trang cuối: Tài liệu tham khảo(Liên kết đối tượng ngoài)         
+| 14|0.5| Đánh giá mức độ hoàn thành
+
+---
+
+|   |3.0| Kỹ năng sử dụng AI
+| :------- | :------: | -------: |
+| 1 |2.0| Sản phẩm AI
+| 2 |1.0| So sánh đánh giá,prompt           
+
