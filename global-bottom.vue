@@ -12,7 +12,55 @@ import seedrandom from 'seedrandom'
  * - glowHue: number - Hue shift for the polygons (default: 0)
  * - glowSeed: string | false - Seed for the stable random distribution (default: 'default')
  */
-import { computed, ref, watch } from 'vue'
+import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
+
+const autoplayInterval = ref()
+const isAutoplay = ref(false)
+const autoplayProgress = ref(0)
+
+const { next, prev } = useNav()
+
+function start() {
+  if (isAutoplay.value)
+    return
+  isAutoplay.value = true
+  let progress = 0
+  autoplayProgress.value = 0
+  autoplayInterval.value = setInterval(() => {
+    progress++
+    autoplayProgress.value = progress / 30
+    if (progress >= 30) {
+      next()
+      progress = 0
+    }
+  }, 100)
+}
+
+function stop() {
+  isAutoplay.value = false
+  autoplayProgress.value = 0
+  clearInterval(autoplayInterval.value)
+}
+
+onMounted(() => {
+  start()
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter')
+      start()
+    else if (e.key === 'Escape')
+      stop()
+  })
+})
+
+onUnmounted(() => {
+  stop()
+  window.removeEventListener('keydown', (e) => {
+    if (e.key === 'Enter')
+      start()
+    else if (e.key === 'Escape')
+      stop()
+  })
+})
 
 const { currentSlideRoute } = useNav()
 
@@ -163,8 +211,18 @@ const date = new Date().toLocaleDateString('vi-VN', { weekday: 'long', year: 'nu
     </div>
   </div>
   <footer class="absolute bottom-0 left-0 right-0 p-2 text-center">{{ date }}</footer>
+  <div v-if="isAutoplay" class="absolute top-2 right-2 flex items-center gap-2">
+    <span class="text-green-500">Autoplay</span>
+    <div class="w-20 h-2 rounded-full bg-gray-500">
+      <div class="h-full rounded-full bg-green-500 transition-all duration-100 ease-linear" :style="{ width: `${autoplayProgress * 100}%` }" />
+    </div>
+  </div>
+  <div v-else class="absolute top-2 right-2 flex items-center gap-2">
+    <span class="text-red-500">Autoplay</span>
+    <div class="w-3 h-3 rounded-full bg-red-500" />
+  </div>
   <footer class="absolute bottom-0 right-0 p-2">{{ $page }}</footer>
-  <footer class="absolute bottom-0 left-0 right-0 p-2">25127542</footer>
+  <footer class="absolute bottom-0 left-0 right-0 p-2">25127542 - Đàm Anh Tuấn</footer>
 
 
 </template>

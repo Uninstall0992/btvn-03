@@ -16,7 +16,7 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # duration of the presentation
-duration: 35min
+preload: true
 ---
 
 # Bản vẽ - bút vẽ
@@ -24,7 +24,7 @@ duration: 35min
 Công cụ tối thượng của những họa sĩ kĩ thuật số.
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Nhấn Space để di chuyển đến trang tiếp theo. Trình tự động chạy sẽ được kích hoạt tại trang tiếp theo. <carbon:arrow-right />
+  Nhấn Space để di chuyển đến trang tiếp theo. <carbon:arrow-right />
 </div>
 
 <!--
@@ -32,96 +32,41 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: fade-out
----
-
----
 transition: slide-up
 level: 2
 ---
 
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
+# Di chuyển
+## Phím tắt
 |                                                     |                             |
 | --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
+| <kbd>right</kbd> / <kbd>space</kbd>                 | hoạt động hoặc slide tiếp theo     |
+| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | hoạt động hoặc slide trước |
+| <kbd>up</kbd>                                       | slide trước              |
+| <kbd>down</kbd>                                     | slide tiếp theo                  |
+| <kbd>enter</kbd>                                    | tự động chạy                |
+| <kbd>esc</kbd>                                      | tắt tự động chạy            |
 <!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Ở đây!</p>
-
-
-# Khái niệm
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
 
 ---
 layout: two-cols
 layoutClass: gap-16
 ---
 
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+# Mục lục
 
 ::right::
 
 <Toc text-sm minDepth="1" maxDepth="2" />
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+transiton: fade
+layout: fact
+---
+
+# Khái niệm
+Bảng vẽ kỹ thuật số là một thiết bị đầu vào cho phép người dùng vẽ tay, hình ảnh động và đồ họa, với một thiết bị vẽ giống như bút gọi là bút vẽ, tương tự như cách một người vẽ hình ảnh bằng bút chì và giấy.
+
 ---
 
 # Code
