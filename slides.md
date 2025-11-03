@@ -3,7 +3,7 @@
 theme: apple-basic
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Finterlink-static0.tsbohemia.cz%2Fwacom-cintiq-27qhd-touch-image3-big_ies2152048.jpg&f=1&nofb=1&ipt=23f71266e63d3c0766c635e54b78011118da895ab3b93be70545b9f39b0323b9
+image: https://www.eventus.si/en/iimg/7450/i.jpg
 # some information about your slides (markdown enabled)
 title: Bảng vẽ - bút vẽ
 # apply UnoCSS classes to the current slide
